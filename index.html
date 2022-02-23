@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <p>Bài tập 1</p>
+    <button type="button" onclick="showMessage()">Click me!</button>
+    <p>Bài tập 2</p>
+    <div id="button"></div>
+    <button type="button" onclick="addMessage()">Click!</button>
+    <p>bài tập 3</p>
+    <button type="button" onclick="Message()">Click!</button>
+    <p>Bài tập 4</p>
+    <button type="button" onclick="onMessage()">Click here!</button>
+
+
+    <script>
+        function showMessage() {
+            alert('Hello word');
+        }
+
+        function addMessage() {
+            document.getElementById("button").innerHTML= "Xin chào!!"
+        }
+
+        function Message() {
+            document.write("Xin chào!!!")
+        }
+
+        function onMessage() {
+            console.log("xin chào!!")
+        }
+    </script>
+</body>
+
+</html>
