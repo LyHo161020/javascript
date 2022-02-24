@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#a1 {
+    margin-top: 20px;
+    width: 600px;
+    margin-left: 20px;
+}
+#amount {
+    width: 40%;
+    display: inline-block;
+}
+
+#to {
+    display: inline-block;
+    width: 25%;
+}
+
+#from {
+    display: inline-block;
+    width: 25%;
+}
+
+#convert {
+    width: 5%;
+    display: inline-block;
+}
