@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form action="#" method="get">
+            <div id="a1">
+                <div id="amount">
+                     Amount
+                    <input type="number" id="number">
+                </div>
+                <div id="from">
+                    From Currency 
+                    <select name="select" id="select1">
+                        <option name="vn">Việt Nam</option>
+                        <option name="usd">USD</option>
+                    </select>
+                </div>
+                <div id="to">
+                    To Currency
+                    <select name="select" id="select2">
+                        <option name="vn">Việt Nam</option>
+                        <option name="usd">USD</option>
+                    </select>
+                </div>
+                <div id="convert">
+                    <input type="submit" name="submit" value="Convert" onclick="convert()">
+                </div>
+                <p id="res"></p>
+            </div>
+        </form>
+        <script>
+                function convert() {
+                    let value1=document.getElementById("select1").value;
+                    let value2=document.getElementById("select2").value; 
+                    let number=Number(document.getElementById("number").value);
+                    console.log(value1);
+                    console.log(value2);
+                    console.log(number);
+                    if(value1===value2) {
+                        alert("chon loai tien muon doi")
+                    }
+                    else if(value1==="Việt Nam") {
+                        let result=number*23000;
+                        document.getElementById("res").innerHTML="So tien sau khi doi la:" + result;
+                    } 
+                    else {
+                        let result=number/23000;
+                        document.getElementById("res").innerHTML="So tien sau khi doi la:" + result;
+                    }
+                 }
+                    
+               
+        </script>
+</body>
+</html>
