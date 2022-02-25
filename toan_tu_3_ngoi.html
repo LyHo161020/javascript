@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="submit" value="Bài 1" onclick="showB1()" />
+    <input type="submit" value="Bài 2" onclick="showB2()" />
+    <script>
+        function showB1() {
+            let a = Number(prompt("nhap a:"));
+            let b = Number(prompt("nhap b:"));
+            result = (a + b < 4) ? "Below" : "Over";
+            alert(result);
+        }
+
+        function showB2() {
+            let message = prompt("nhap chuoi tin nhan:");
+
+            result = (message == "Employee") ? "hello" : (message == "Director") ? "Greetings" : (message == "") ? 'No login' :'';
+            alert(result);
+        }
+    </script>
+</body>
+
+</html>
